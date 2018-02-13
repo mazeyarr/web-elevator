@@ -1,0 +1,85 @@
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+.label-elevator-status{
+    opacity: 0;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.level{
+    display: table;
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.level-active{
+    background-color: #5cb85c;
+}
+
+.machine-indicator{
+    display: table-cell;
+    height: 1000px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+.machine-indicator > span{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.level-indicator{
+    display:table-cell;
+    vertical-align:middle;
+    text-align: center;
+    z-index: 100;
+}
+
+.level-indicator-label{
+    padding: 15px;
+    margin-left: 1px;
+}
+
+.btnContainer{
+
+}
+
+.btnLevel{
+    display: block;
+    margin: 5px;
+    border-radius: 20px;
+}
