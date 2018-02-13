@@ -3,6 +3,7 @@
 	{
 		public function index()
 		{
-			$this->view('home/index');
+		    $floorSize = 5;
+			$this->view('home/index', ["floors" => $floorSize]);
 		}
 	}
